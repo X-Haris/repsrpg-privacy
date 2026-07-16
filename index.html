@@ -89,21 +89,22 @@
 <body>
     <div class="container">
         <h1>RepsRPG Privacy Policy</h1>
-        <p class="effective-date">Effective Date: January 19, 2026</p>
+        <p class="effective-date">Effective Date: July 16, 2026</p>
 
-        <p>Welcome to RepsRPG! This Privacy Policy explains how we collect, use, and protect your information when you use our fitness app.</p>
+        <p>Welcome to RepsRPG! This Privacy Policy explains how we collect, use, and protect your information when you use our fitness app. RepsRPG is developed and published by Haris Abduloski.</p>
 
         <h2>1. Information We Collect</h2>
 
         <h3>Account Information</h3>
         <ul>
-            <li><strong>Anonymous ID:</strong> We use Firebase Authentication to create an anonymous user account. No email or password is required.</li>
+            <li><strong>Anonymous ID:</strong> We use Firebase Authentication to create an anonymous user account. No email or password is required to play.</li>
+            <li><strong>Google Sign-In (optional):</strong> You may choose to sign in with, or link, a Google account so your progress survives reinstalling the app or moving to a new device. If you do, Firebase Authentication receives and stores your Google account's basic profile — including your <strong>email address</strong>, and the name and profile picture on that account. This is held by Firebase Authentication to identify your account; it is not shown to other players and is not used for marketing. Playing anonymously without signing in remains fully supported.</li>
             <li><strong>Username:</strong> A display name you choose (visible to other players)</li>
             <li><strong>Country:</strong> Detected from your device settings (used for regional leaderboards)</li>
             <li><strong>Friend Code:</strong> An auto-generated code for adding friends</li>
         </ul>
 
-        <h3>Fitness & Gameplay Data</h3>
+        <h3>Fitness &amp; Gameplay Data</h3>
         <ul>
             <li>Exercise statistics (push-ups, squats, sit-ups completed)</li>
             <li>Power level and experience points</li>
@@ -121,6 +122,18 @@
         <ul>
             <li>Friends list (user IDs of people you've added)</li>
             <li>Challenge history with friends</li>
+        </ul>
+        <p>RepsRPG has no chat or messaging feature. Challenges you send contain only structured game data — the exercise type, the rep target, and a time limit — and the only text other players see is the username you choose.</p>
+
+        <h3>Advertising &amp; Analytics Identifiers</h3>
+        <ul>
+            <li><strong>Advertising ID:</strong> Your device's advertising identifier is collected by Google AdMob to serve rewarded ads, and by Google Firebase Analytics to measure app usage. See "Advertising &amp; Your Consent" below.</li>
+            <li><strong>Usage and diagnostics:</strong> Anonymous app-usage events, plus crash reports and diagnostic data (device model, OS version, app version).</li>
+        </ul>
+
+        <h3>Purchase Information</h3>
+        <ul>
+            <li>RepsRPG offers an optional one-time <strong>Premium</strong> purchase, which unlocks additional bosses and removes the daily limit on duel tickets. Payments are processed entirely by Google Play — we never receive or store your payment card details. We receive confirmation of your purchase status in order to unlock Premium features.</li>
         </ul>
 
         <h3>Device Permissions</h3>
@@ -177,27 +190,56 @@
             <li>Does not run in the background unless you have apps locked</li>
         </ul>
 
-        <h2>4. How We Use Your Information</h2>
+        <h2>4. Advertising &amp; Your Consent</h2>
+
+        <p>RepsRPG displays rewarded video ads powered by Google AdMob. Watching an ad is always optional and is offered in exchange for an in-app reward.</p>
+
+        <p>When you launch the app for the first time, you may be shown a consent form (depending on your region) asking whether you agree to personalized advertising.</p>
+        <ul>
+            <li><strong>If you consent:</strong> AdMob may use your Advertising ID to show ads tailored to your interests.</li>
+            <li><strong>If you decline:</strong> AdMob will still show ads, but they will not be personalized.</li>
+            <li><strong>Changing your choice:</strong> You can review or change your consent at any time via <em>Settings &rarr; Ad Privacy Settings</em> in the app, or by resetting your device's Advertising ID under <em>Settings &rarr; Privacy &rarr; Ads</em> in your Android settings.</li>
+        </ul>
+
+        <h2>5. US State Privacy Rights</h2>
+        <p>If you are a resident of California, Colorado, Connecticut, Virginia, or another US state with applicable privacy laws, you have the right to opt out of the sale or sharing of your personal information for advertising purposes.</p>
+        <p>To exercise this right, you can:</p>
+        <ul>
+            <li>Decline personalized ads when shown the consent form, or change your choice later via <em>Settings &rarr; Ad Privacy Settings</em>.</li>
+            <li>Reset or opt out of ad personalization via your device's <em>Settings &rarr; Privacy &rarr; Ads</em>.</li>
+            <li>Contact us at <a href="mailto:support@abduloski.dev">support@abduloski.dev</a> to request restricted data processing.</li>
+        </ul>
+
+        <h2>6. How We Use Your Information</h2>
         <ul>
             <li>Track your fitness progress and power level</li>
             <li>Display global and country leaderboards</li>
             <li>Enable multiplayer challenges with friends</li>
             <li>Send push notifications for challenge events</li>
             <li>Sync your progress across devices when signed in</li>
+            <li>Serve rewarded advertisements, which help fund development and keep the app free</li>
+            <li>Verify your purchase status and unlock Premium features</li>
             <li>Improve app functionality and user experience</li>
         </ul>
 
-        <h2>5. Third-Party Services</h2>
+        <h2>7. Third-Party Services</h2>
         <p>RepsRPG uses the following Google Firebase services:</p>
         <ul>
-            <li><strong>Firebase Authentication:</strong> For anonymous sign-in</li>
+            <li><strong>Firebase Authentication:</strong> For anonymous sign-in and optional Google account sign-in</li>
             <li><strong>Cloud Firestore:</strong> To store user profiles, stats, and challenges</li>
             <li><strong>Firebase Cloud Messaging:</strong> For push notifications</li>
             <li><strong>Firebase Crashlytics:</strong> To identify and fix app crashes</li>
+            <li><strong>Firebase Analytics:</strong> To understand how the app is used so we can improve it. This includes your device's Advertising ID.</li>
+        </ul>
+        <p>RepsRPG also uses the following Google services:</p>
+        <ul>
+            <li><strong>Google AdMob:</strong> To serve rewarded video ads. AdMob may collect your Advertising ID and device information to serve personalized or non-personalized ads based on your consent choices. See <a href="https://support.google.com/admob/answer/6128543" target="_blank">How Google uses data when you use our partners' sites or apps</a>.</li>
+            <li><strong>Google Play Billing:</strong> To process the Premium in-app purchase. Google handles all payment processing; we only receive confirmation of purchase status.</li>
+            <li><strong>Google ML Kit:</strong> For on-device pose detection. Camera data is processed on your device and is never uploaded.</li>
         </ul>
         <p>These services are operated by Google. Please review <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> for more information.</p>
 
-        <h2>6. Data Storage & Security</h2>
+        <h2>8. Data Storage &amp; Security</h2>
         <ul>
             <li><strong>Cloud Storage:</strong> Your data is stored securely in Firebase (Google Cloud) data centers</li>
             <li><strong>Local Storage:</strong> A copy of your data is stored on your device for offline access</li>
@@ -205,41 +247,46 @@
             <li><strong>Access Control:</strong> Firebase Security Rules restrict data access to authorized users only</li>
         </ul>
 
-        <h2>7. Data Retention & Deletion</h2>
-        <p>Your data is retained until you choose to delete your account.</p>
+        <h2>9. International Data Transfers</h2>
+        <p>Our service providers (notably Google) process data on servers that may be located in countries other than yours, including the United States. Where required, these transfers are governed by appropriate safeguards.</p>
+
+        <h2>10. Data Retention &amp; Deletion</h2>
+        <p>Your data is retained until you choose to delete your account. Analytics and crash data are retained according to Google Firebase's standard retention periods.</p>
 
         <div class="warning">
             <strong>To delete your account:</strong> Go to Settings in the app and tap "Delete Account". All your cloud data will be permanently removed within 24 hours. Local data on your device can be cleared by uninstalling the app or clearing app data in Android settings.
         </div>
 
-        <h2>8. Data We Do NOT Collect</h2>
+        <h2>11. Data We Do NOT Collect</h2>
         <ul>
-            <li>Email address or phone number</li>
-            <li>Real name or personal identity</li>
+            <li>Your real name or personal identity — your in-game identity is the username you choose. (If you opt to sign in with Google, Firebase Authentication receives your Google account's basic profile as described in Section 1.)</li>
+            <li>Phone number</li>
+            <li>Payment card details — Google Play processes all payments; we never see or store your card information</li>
             <li>Precise GPS location</li>
             <li>Contacts or call logs</li>
-            <li>Payment or financial information</li>
             <li>Photos or videos from your device</li>
             <li>Health data from other apps</li>
-            <li>List of installed apps or app usage data</li>
+            <li>The list of apps installed on your device, or your app usage data — App Lock reads these on-device only and never transmits them (see Section 3)</li>
         </ul>
 
-        <h2>9. Children's Privacy</h2>
+        <h2>12. Children's Privacy</h2>
         <p>RepsRPG is not directed at children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with information, please contact us so we can delete it.</p>
 
-        <h2>10. Your Rights</h2>
+        <h2>13. Your Rights</h2>
         <p>You have the right to:</p>
         <ul>
             <li><strong>Access:</strong> View your data in your app profile and stats</li>
             <li><strong>Delete:</strong> Remove your account and all associated data</li>
-            <li><strong>Opt-out:</strong> Disable push notifications in Android settings</li>
+            <li><strong>Opt-out:</strong> Disable push notifications in Android settings; decline or withdraw personalized-ads consent via <em>Settings &rarr; Ad Privacy Settings</em></li>
             <li><strong>Portability:</strong> Your stats are visible in-app; contact us for a data export</li>
         </ul>
+        <p><strong>EEA / UK (GDPR):</strong> you have the right to access, correct, or delete your personal data, to object to or restrict certain processing, and to data portability. Our legal bases are our legitimate interest in operating and improving the app, our need to perform the purchase you request, and your consent where required (for example, for personalized advertising).</p>
+        <p><strong>California (CCPA/CPRA):</strong> see "US State Privacy Rights" above. You have the right to know what we collect, to request deletion, and not to be discriminated against for exercising your rights.</p>
 
-        <h2>11. Changes to This Policy</h2>
+        <h2>14. Changes to This Policy</h2>
         <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date. Your continued use of the app after changes constitutes acceptance of the updated policy.</p>
 
-        <h2>12. Contact Us</h2>
+        <h2>15. Contact Us</h2>
         <div class="contact">
             <p>If you have questions about this Privacy Policy or your data, please contact us:</p>
             <p><strong>Email:</strong> <a href="mailto:support@abduloski.dev">support@abduloski.dev</a></p>
