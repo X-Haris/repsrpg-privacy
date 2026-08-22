@@ -89,7 +89,7 @@
 <body>
     <div class="container">
         <h1>RepsRPG Privacy Policy</h1>
-        <p class="effective-date">Effective Date: August 20, 2026</p>
+        <p class="effective-date">Effective Date: August 22, 2026</p>
 
         <p>Welcome to RepsRPG! This Privacy Policy explains how we collect, use, and protect your information when you use our fitness app. RepsRPG is developed and published by Haris Abduloski.</p>
 
@@ -146,8 +146,8 @@
         <h3>App Lock Feature Permissions (Optional)</h3>
         <p>If you enable the App Lock feature, the following additional permissions are required:</p>
         <ul>
-            <li><strong>Accessibility Service:</strong> To detect when locked apps are opened. It reads only the package name of the app you open — never your screen contents, the text you type, or your passwords.</li>
-            <li><strong>Usage Access:</strong> To identify which app is currently in the foreground</li>
+            <li><strong>Accessibility Service:</strong> To detect when locked apps are opened. It reads only the package name of the app you open — never your screen contents, the text you type, or your passwords. While App Lock is turned on, this check happens each time you switch apps, including while RepsRPG is closed or not in use.</li>
+            <li><strong>Usage Access:</strong> To identify which app is currently in the foreground. While App Lock is turned on, RepsRPG checks this on a short repeating interval, running alongside the Accessibility Service, including while RepsRPG is closed or not in use.</li>
             <li><strong>Display Over Other Apps:</strong> To show the exercise challenge overlay</li>
             <li><strong>Query Installed Apps:</strong> To display a list of apps you can lock</li>
         </ul>
@@ -182,7 +182,9 @@
             <li>All locked app configurations are stored locally on your device only</li>
         </ul>
 
-        <p>To know when a locked app opens, App Lock checks which app is currently in the foreground. This check happens entirely on your device, is used only to decide whether to show a challenge, and is never kept as a usage history or uploaded.</p>
+        <p>To know when a locked app opens, App Lock checks which app is currently in the foreground. While App Lock is turned on it does this two ways at the same time: the Accessibility Service reports the app you just opened, and a background check reads the current foreground app on a short repeating interval. Both run whenever you have apps locked, including while RepsRPG is closed or not in use.</p>
+
+        <p>Every one of these checks happens entirely on your device, is used only to decide whether to show a challenge, and is never kept as a usage history or uploaded.</p>
 
         <p><strong>What App Lock does NOT do:</strong></p>
         <ul>
